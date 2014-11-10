@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dream Station Art Gallery</title>
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" media="(min-width: 1201px)" href="styles/dreamstationBiggest.css">
+		<link rel="stylesheet" media="(min-width: 801px) and (max-width: 1200px)" href="styles/dreamstationBigger.css">
+		<link rel="stylesheet" media="(min-width: 561px) and (max-width: 800px)" href="styles/dreamstationTablet.css">
+		<link rel="stylesheet" media="(max-width: 560px)" href="styles/dreamstationMobile.css">
+		<link rel="stylesheet" href="styles/animate.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="header_left">
+				<img id="logo" src="images/logo.png" onclick="printScreenDimensions()">
+			</div>
+			<div id="header_center">
+				<div id="header_center_title">
+					<p id="header_center_p_title">Dream Station Art Gallery</p>
+				</div>
+				<p id="header_center_p_subtitle">It's time to fly, it's time to dream...</p>	
+			</div>
+			<div id="header_right">
+				<p class="header_right_p_gray">Newsletter</p>
+				<input type="text" placeholder="e-mail">
+			</div>
+		</header>
+
+		<div id='main'>
+			<div id="main_left">
+				<p class="p_us">
+					Nosotros
+					<img id="signature" src="images/firma-dream.png">
+				</p>
+				<ul id="main_left_list">
+					<li>Diarios creativos</li>
+					<li>Mapa de artistas <strong>(minimundo 3d)</strong></li>
+					<li>Subastas benéficas</li>
+					<li>Tienda Dream</li>
+				</ul>
+			</div>
+			<div id="main_center">
+				<img src="images/clock2/reloj-2-mapa-de-artistas.png" id="clock2">
+				<img src="images/clock3/reloj-3-subastas-beneficas.png" id="clock3">
+				<img src="images/clock4/reloj-4.png" id="clock4">
+				<!-- Clock1 -->
+				<img src="images/clock1/ala-superior-izquierda1.png" id="clock1TL">
+				<img src="images/clock1/ala-inferior-izquierda1.png" id="clock2TL">
+				<img src="images/clock1/ala-superior-derecha1.png" id="clock3TL">
+				<img src="images/clock1/ala-inferior-derecha1.png" id="clock4TL">
+				<img src="images/clock1/reloj-diarios-creativos-1.png" id="clock1">
+			</div>
+			<div id="main_right">
+				<div id="main_right_images">
+					<img id="main_right_right_polaroid" src="images/polaroid.png">
+					<img id="main_right_left_polaroid" src="images/polaroid2.png">
+				</div>
+				<div id="main_right_counters">
+					<p class="main_right_p_orange">0000 visitas</p>
+					<p class="main_right_p_orange">0000 obras</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer_left">
+				<ul id="footer_list">
+					<li><img class="img_lengua_signos" src="images/icono_lengua_signos.png"></li>
+					<li><a href="#">Condiciones de uso</a></li>
+					<li><a href="#">Privacidad</a></li>
+					<li><a href="#">Compra de arte</a></li>
+					<li><a href="#">Ayuda/FAQ</a></li>
+				</ul>
+			</div>
+			<div id="footer_right">
+				<div id="footer_right_images">
+					<img class="img_facebook img_footer_rrss" src="images/rrss/facebok-icon.png">
+					<img class="img_instagram img_footer_rrss" src="images/rrss/instagram.png">
+					<img class="img_pinterest img_footer_rrss" src="images/rrss/pinterest-icon.png">
+					<img class="img_rss img_footer_rrss" src="images/rrss/rss-icon.png">
+					<img class="img_twitter img_footer_rrss" src="images/rrss/twitter-icon.png">
+					<img class="img_linkedin img_footer_rrss" src="images/rrss/linkedin-icon.png">
+					<img class="img_gplus img_footer_rrss" src="images/rrss/gplus-icon.png">
+					<img class="img_youtube img_footer_rrss" src="images/rrss/youtube-icon.png">
+					<img class="img_flickr img_footer_rrss" src="images/rrss/flickr-icon.png">
+				</div>
+			</div>
+		</footer>
+
+		<script>
+
+			$(function(){
+				$("#header_center_p_title").addClass("flipInY");
+				$("#header_center_p_subtitle").addClass("flipInY");
+				$("#logo").addClass("zoomIn");
+			});
+
+			$("#clock1").mouseover(function(){
+				$("#clock1TL").addClass("pulse");
+				$("#clock2TL").addClass("pulse");
+				$("#clock3TL").addClass("pulse");
+				$("#clock4TL").addClass("pulse");
+			});
+
+			$("#clock1").mouseleave(function(){
+				$("#clock1TL").removeClass("pulse");
+				$("#clock2TL").removeClass("pulse");
+				$("#clock3TL").removeClass("pulse");
+				$("#clock4TL").removeClass("pulse");
+			});
+
+			$("#clock1").click(function(){
+				$("#clock1TL").addClass("pulse");
+			});
+		</script>
+
+	</body>
+
+</html>
