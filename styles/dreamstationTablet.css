@@ -183,16 +183,16 @@ header{
 			width: 220px;
 			height: 220px;
 		}
-		#clock2TL{
+		#clock1BL{
 			display: none;
 		}
-		#clock3TL{
-			display: none;
-		}
-		#clock4TL{
+		#clock1BR{
 			display: none;
 		}
 		#clock1TL{
+			display: none;
+		}
+		#clock1TR{
 			display: none;
 		}
 		#clock2{
@@ -201,6 +201,18 @@ header{
 			top: 48%;
 			width: 220px;
 			height: 110px;
+		}
+		#clock2TL{
+			display: none;
+		}
+		#clock2TR{
+			display: none;
+		}
+		#clock2BL{
+			display: none;
+		}
+		#clock2BR{
+			display: none;
 		}
 		#clock3{
 			position: absolute;
