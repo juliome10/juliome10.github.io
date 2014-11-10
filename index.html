@@ -44,14 +44,21 @@
 				</ul>
 			</div>
 			<div id="main_center">
-				<img src="images/clock2/reloj-2-mapa-de-artistas.png" id="clock2">
 				<img src="images/clock3/reloj-3-subastas-beneficas.png" id="clock3">
 				<img src="images/clock4/reloj-4.png" id="clock4">
+
+				<!-- Clock2 -->
+				<img src="images/clock2/ala-inferior-derecha-2.png" id="clock2BR">
+				<img src="images/clock2/ala-inferior-izquierda.png" id="clock2BL">
+				<img src="images/clock2/ala-superior-derecha-2.png" id="clock2TR">
+				<img src="images/clock2/ala-superior-izquierda-2.png" id="clock2TL">
+				<img src="images/clock2/reloj-2-mapa-de-artistas.png" id="clock2">
+
 				<!-- Clock1 -->
 				<img src="images/clock1/ala-superior-izquierda1.png" id="clock1TL">
-				<img src="images/clock1/ala-inferior-izquierda1.png" id="clock2TL">
-				<img src="images/clock1/ala-superior-derecha1.png" id="clock3TL">
-				<img src="images/clock1/ala-inferior-derecha1.png" id="clock4TL">
+				<img src="images/clock1/ala-inferior-izquierda1.png" id="clock1BL">
+				<img src="images/clock1/ala-superior-derecha1.png" id="clock1TR">
+				<img src="images/clock1/ala-inferior-derecha1.png" id="clock1BR">
 				<img src="images/clock1/reloj-diarios-creativos-1.png" id="clock1">
 			</div>
 			<div id="main_right">
@@ -100,16 +107,30 @@
 
 			$("#clock1").mouseover(function(){
 				$("#clock1TL").addClass("pulse");
-				$("#clock2TL").addClass("pulse");
-				$("#clock3TL").addClass("pulse");
-				$("#clock4TL").addClass("pulse");
+				$("#clock1TR").addClass("pulse");
+				$("#clock1BL").addClass("pulse");
+				$("#clock1BR").addClass("pulse");
 			});
 
 			$("#clock1").mouseleave(function(){
 				$("#clock1TL").removeClass("pulse");
+				$("#clock1TR").removeClass("pulse");
+				$("#clock1BL").removeClass("pulse");
+				$("#clock1BR").removeClass("pulse");
+			});
+
+			$("#clock2").mouseover(function(){
+				$("#clock2TL").addClass("pulse");
+				$("#clock2TR").addClass("pulse");
+				$("#clock2BL").addClass("pulse");
+				$("#clock2BR").addClass("pulse");
+			});
+
+			$("#clock2").mouseleave(function(){
 				$("#clock2TL").removeClass("pulse");
-				$("#clock3TL").removeClass("pulse");
-				$("#clock4TL").removeClass("pulse");
+				$("#clock2TR").removeClass("pulse");
+				$("#clock2BL").removeClass("pulse");
+				$("#clock2BR").removeClass("pulse");
 			});
 
 			$("#clock1").click(function(){

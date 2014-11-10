@@ -183,7 +183,6 @@ header{
 			width: 400px;
 			height: 400px;
 		}
-		
 		#clock1TL{
 			position: absolute;
 			top: 20%;
@@ -194,7 +193,7 @@ header{
 			-webkit-animation-delay: 0.5s;
   			-webkit-animation-iteration-count: infinite;
 		}
-		#clock2TL{
+		#clock1BL{
 			position: absolute;
 			top: 20%;
 			left: 32%;
@@ -203,7 +202,7 @@ header{
 			-webkit-animation-duration: 1s;
   			-webkit-animation-iteration-count: infinite;
 		}
-		#clock3TL{
+		#clock1TR{
 			position: absolute;
 			top: 20%;
 			left: 23%;
@@ -212,7 +211,7 @@ header{
 			-webkit-animation-duration: 1s;
   			-webkit-animation-iteration-count: infinite;
 		}
-		#clock4TL{
+		#clock1BR{
 			position: absolute;
 			top: 20%;
 			left: 23%;
@@ -222,13 +221,50 @@ header{
 			-webkit-animation-delay: 0.5s;
   			-webkit-animation-iteration-count: infinite;
 		}
-
 		#clock2{
 			position: absolute;
-			left: 25%;
+			left: 20%;
 			top: 50%;
-			width: 320px;
-			height: 160px;
+			width: 640px;
+			height: 320px;
+		}
+		#clock2TL{
+			position: absolute;
+			top: 58%;
+			left: 26%;
+			width: 150px;
+			height: 110px;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-delay: 0.5s;
+  			-webkit-animation-iteration-count: infinite;
+		}
+		#clock2BL{
+			position: absolute;
+			top: 66%;
+			left: 26%;
+			width: 150px;
+			height: 80px;
+			-webkit-animation-duration: 1s;
+  			-webkit-animation-iteration-count: infinite;
+		}
+		#clock2TR{
+			position: absolute;
+			top: 70%;
+			left: 42%;
+			width: 200px;
+			height: 60px;
+			-webkit-animation-duration: 1s;
+  			-webkit-animation-iteration-count: infinite;
+		}
+		#clock2BR{
+			position: absolute;
+			top: 72%;
+			left: 42%;
+			width: 150px;
+			height: 80px;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-delay: 0.5s;
+  			-webkit-animation-iteration-count: infinite;
 		}
 		#clock3{
 			position: absolute;
