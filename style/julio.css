@@ -6,6 +6,8 @@ body, html {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Dosis', sans-serif;
+	color: white;
 }
 
 header{
@@ -13,17 +15,40 @@ header{
 }
 
 footer{
+	clear: both;
 }
 
 #main{
 	background: rgba(20, 20, 20, 0.6);
+	overflow: hidden;
+}
+
+#leftMain{
+	width: 10%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	margin-left: 2.5%;
+}
+
+#centerMain{
+	width: 75%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
 	vertical-align: middle;
 	text-align: center;
-	font-family: 'Dosis', sans-serif;
 	font-size: 60px;
 	color: white;
 	padding: 0px;
 	margin: 0px;
+}
+
+#rightMain{
+	width: 10%;
+	padding: 0px;
+	margin-right: 2.5%;
+	float: left;
 }
 
 #main p{
@@ -59,4 +84,13 @@ footer{
     -o-transform: all 1s ease;
     -ms-transform: all 1s ease;
 	transform: scale(1.5);
+}
+
+ul{
+	list-style-image: url(../image/listIndicator.png);
+	text-align: left;
+}
+
+li{
+	margin-top: 5px;
 }
