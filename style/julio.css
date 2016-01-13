@@ -94,3 +94,7 @@ ul{
 li{
 	margin-top: 5px;
 }
+
+a{
+	text-decoration: none;
+}
