@@ -1,7 +1,8 @@
 body, html {
-	background: url(../image/background3.png);
+	background: url(../image/background.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	height: 100%;
 	width: 100%;
 	margin: 0px;
@@ -23,32 +24,17 @@ footer{
 	overflow: hidden;
 }
 
-#leftMain{
-	width: 10%;
-	padding: 0px;
-	margin: 0px;
-	float: left;
-	margin-left: 2.5%;
-}
-
 #centerMain{
-	width: 75%;
+	width: 100%;
 	padding: 0px;
 	margin: 0px;
 	float: left;
 	vertical-align: middle;
 	text-align: center;
-	font-size: 60px;
+	font-size: 4vw;
 	color: white;
 	padding: 0px;
 	margin: 0px;
-}
-
-#rightMain{
-	width: 10%;
-	padding: 0px;
-	margin-right: 2.5%;
-	float: left;
 }
 
 #main p{
@@ -60,14 +46,14 @@ footer{
 
 #linkedin{
 	margin: 30px;
-	width: 4%;
-	height: 4%;
+	width: 60px;
+	height: 60px;
 }
 
 #github{
 	margin: 30px;
-	width: 4%;
-	height: 4%;
+	width: 60px;
+	height: 60px;
 }
 
 #linkedin, #github{
